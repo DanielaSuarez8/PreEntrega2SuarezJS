@@ -64,7 +64,6 @@ function verificarCoincidencia() {
 
 function voltearCarta() {
     const idCarta = this.getAttribute('data-id');
-    // Evitar que el jugador haga clic en la misma carta dos veces
     if (!idsCartasElegidas.includes(idCarta)) {
         cartasElegidas.push(arrayCartas[idCarta].nombre);
         idsCartasElegidas.push(idCarta);
@@ -92,5 +91,4 @@ function iniciarJuego() {
     }
 }
 
-// Inicia el juego al cargar la página
 iniciarJuego();
